@@ -1,0 +1,409 @@
+
+.App {
+  text-align: center;
+  height: 100vh; /* Modificado para ocupar toda la página */
+  background-image: url('../public/img1.jpeg');
+  background-size: cover;
+  overflow-y: auto;
+}
+
+
+.registros{
+  background-color: rgba(0, 0, 0, 0.689);
+  padding: 25px;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(255, 255, 255);
+  margin: 100px 500px;
+}
+/* cambios en el titulo de registrar y iniciar sesion */
+.registros h4 {
+  margin-right: 50px;
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
+
+/* cambios en el aspecto donde se coloca la informacion */
+.controls{
+  margin: 10px;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 9999px;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  color: #ffffff;
+}
+.link {
+  text-decoration: underline;
+  cursor: pointer;
+  color: rgb(141, 141, 145);
+  /* Otros estilos adicionales si los necesitas */
+}
+
+/* cambios al aspecto del boton */
+button {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.536);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 30px; /* Ajusta este valor según sea necesario */
+}
+
+/* permite ver el botton en su segunda imagen */
+button:hover {
+  background-color: #00ff99;
+  box-shadow: 0px 15px 20px rgba(23, 255, 162, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+
+header{
+  background-color: rgb(245,245,245);
+  position: fixed;
+  width: 100%;
+}
+
+header .container{
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header nav{
+  flex-direction: row;
+  padding-bottom: 0;
+  padding-right: 20px;
+}
+
+header .logo{
+  margin: 0;
+  padding: 20px 25px;
+  font-weight: bold;
+  color: rgb(255, 77, 77);
+  font-size: 1.6em;
+}
+
+header .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+header nav{
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+header a{
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+header a:hover{
+  color: rgb(255, 77, 77);
+}
+
+/* contenido qr*/
+
+.container{
+  max-width: 1400px;
+  margin: auto;
+}
+
+.p{
+  width: 50%;
+}
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+
+#hero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 98vh;
+  color: white;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)), 
+      url(../public/img1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#hero .img-container{
+  background-image:url('../public/codigo-qr.png');
+  background-size: cover;
+  background-position: center center;
+  height: 200px;
+  width: 200px;
+}
+/* contenido reportes */
+#reportes{
+  background-color: rgb(30,30,30);
+  color: white;
+  text-align: center;
+}
+
+#reportes .container{
+  padding: 150px 12px;
+}
+
+#reportes h2{
+  margin-top: 0;
+  font-size: 3.2em;
+}
+
+#reportes p{
+  display: none;
+}
+
+#reportes .carta{
+  background-position: center center;
+  background-size: cover;
+  padding: 50px 0px;
+  margin: 30px;
+  border-radius: 15px;
+}
+
+.carta:first-child{
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  ,url("../public/uso.jpg");
+
+}
+
+.carta:nth-child(2){
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  ,url("../public/entrada.jpg");
+}
+
+.carta:nth-child(3){
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  ,url("../public/salida.jpg");
+}
+
+#reportes .report{
+  display: flex;
+  justify-content: center;
+}
+
+#reportes p{
+  display: block;
+  margin-bottom: 30px;
+}
+
+#reportes h2{
+  font-size: 4em;
+}
+
+#reportes h3{
+  margin-top: 0;
+}
+
+#reportes .carta{
+  padding: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 0;
+  background-color: rgba(50, 50, 50, 1);
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+/* cuenta */
+.perfil {
+
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f1f1f1;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+h1 {
+font-size: 36px;
+margin-bottom: 30px;
+}
+
+ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+li {
+margin-bottom: 10px;
+}
+
+strong {
+font-weight: bold;
+}
+
+.car-form {
+  margin-top: 140px;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 500px; /* Ajusta el valor según tus necesidades */
+  margin-left: auto;
+  margin-right: auto;
+}
+.car-search {
+  margin-top: 90px;
+  background-color: #fff;
+  max-width: 500px; /* Ajusta el valor según tus necesidades */
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.car-results {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.car-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.car-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.car-form input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.car-form button {
+  display: block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.car-list-container {
+  margin-top: 30px;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.car-list h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.car-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.car-table th,
+.car-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.car-table th {
+  font-weight: bold;
+}
+
+.car-table td:last-child {
+  text-align: center;
+}
+
+.car-table button {
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.car-table button:last-child {
+  margin-right: 0;
+}
+
+.car-detalles {
+  background-color: #f8f8f8;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px; /* Ajusta el ancho según tus necesidades */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cerrar {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #ccc;
+  border: none;
+  padding: 5px;
+  border-radius: 50%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.car-detalles h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.car-detalles p {
+  margin: 5px 0;
+}
